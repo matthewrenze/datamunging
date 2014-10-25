@@ -25,11 +25,11 @@ colnames(testX) = features[, 2]
 colnames(testY) = c("Activity")
 colnames(testS) = c("Subject")
 
-# Bind tables horizontally
+# Bind tables by columns
 train <- cbind(trainX, trainY, trainS)
 test <- cbind(testX, testY, testS)
 
-# Bind tables vertically
+# Bind tables by rows
 allData <- rbind(train, test)
 
 # Get columns to be extracted
@@ -56,7 +56,7 @@ data <- join(data, activities, by="Activity")
 data$Activity = NULL
 colnames(data)[colnames(data) == "Label"] = "Activity"
 
-# Transform variables in to human readable format
+# Transform variables in to human-readable format
 variables <- colnames(data)
 variables <- sub("^t", "Time ", variables)
 variables <- sub("^f", "Frequency ", variables)
