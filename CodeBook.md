@@ -10,7 +10,7 @@ Missing Values: 0
 The source of the data used in this analysis is the Human Activity Recognition data set from the UCI Machine Learning Repository. For more information, please visit: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##Data Set Information
-The data set was created by reading, transforming, summarizing, and writing data from the UCI HAR dataset files into the Summary.txt output file.  First, the data were loaded into tables from their raw files. Next the various tables were joined together to create a complete data set. Then all unnecessary columns were removed and the remaining columns are renamed into human-readable format. Then a summary table of the averages of all relevant variables, grouped by Activity and Subject, was created. Finally, the summary table was written to a text file.
+The data set was created by reading, transforming, summarizing, and writing data from the UCI HAR dataset files into the Summary.txt output file.  First, the data were loaded into tables from their raw files. Next the various tables were joined together to create a complete data set. Then all unnecessary columns were removed and the remaining columns were renamed into human-readable format. Then a summary table of the averages of all relevant variables, grouped by Activity and Subject, was created. Finally, the summary table was written to a text file.
 
 ##Attribute Information
 | Variable                                                      | Type    | Description                                                                                 
@@ -84,5 +84,5 @@ The data set was created by reading, transforming, summarizing, and writing data
 | Frequency Body Gyroscope Jerk Magnitude Mean                  | numeric | Average of magnitude of movement of gyroscope jerk signal in the frequency domain            | 
 | Frequency Body Gyroscope Jerk Magnitude Standard Deviation    | numeric | Standard deviation of magnitude of movement of gyroscope jerk signal in the frequency domain | 
 
-Please note that all numeric measures have been normalized and bounded within [-1, 1] so all units of measure are cancelled out.
+Please note that all numeric measures have been normalized and bounded within [-1, 1] so all units of measure have cancelled out.
 																																										 
